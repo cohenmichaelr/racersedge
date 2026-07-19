@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear & Pro Fitting | The Racer's Edge | Boca Raton, FL</title>
+    <meta name="description" content="South Florida's premier destination for high-end cycling gear and professional bike fitting. Authorized dealer for Princeton, Roval, Garmin, and more. Expert Retül 3D analysis.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .text-electric-blue { color: #007FFF; }
+        .bg-electric-blue { background-color: #007FFF; }
+        .border-electric-blue { border-color: #007FFF; }
+        .hover-electric-blue:hover { background-color: #0066CC; }
+        
+        .glass-card {
+            background: rgba(31, 41, 55, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="logo"><a href="index.html"><img src="Images/logo.png" alt="The Racer's Edge" fetchpriority="high" width="175" height="50"></a></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium uppercase text-xs tracking-widest">
+                <a href="index.html" class="hover:text-electric-blue transition">Home</a>
+                <a href="index.html#bikes" class="hover:text-electric-blue transition">Bicycles</a>
+                <a href="#accessories" class="hover:text-electric-blue transition">Gear</a>
+                <a href="#fittings" class="hover:text-electric-blue transition">Fitting</a>
+                <a href="index.html#contact" class="hover:text-electric-blue transition">Contact</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-electric-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-b border-gray-800">
+            <div class="px-6 py-8 flex flex-col space-y-6 font-medium uppercase text-sm tracking-widest">
+                <a href="index.html" class="hover:text-electric-blue transition menu-link">Home</a>
+                <a href="index.html#bikes" class="hover:text-electric-blue transition menu-link">Bicycles</a>
+                <a href="#accessories" class="hover:text-electric-blue transition menu-link">Gear</a>
+                <a href="#fittings" class="hover:text-electric-blue transition menu-link">Fitting</a>
+                <a href="index.html#contact" class="hover:text-electric-blue transition menu-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-40 pb-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-800 mb-6 tracking-tight leading-none uppercase">
+                Performance <span class="text-electric-blue">& Tech</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+                Every watt matters. We partner with the world's most innovative brands to optimize your speed, comfort, and performance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Accessories & Gear Section -->
+    <section id="accessories" class="py-24 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-electric-blue font-bold uppercase tracking-widest text-sm mb-2">Essential Kit</h2>
+                    <h3 class="text-4xl md:text-5xl font-800 uppercase">The World's Best Brands</h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Components Card -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-square glass-card flex flex-col items-center">
+                    <div class="h-3/4 w-full p-6 flex flex-col items-center gap-4 opacity-20 transition duration-500 group-hover:scale-105 group-hover:opacity-100 flex-none">
+                        <a href="https://bike.shimano.com" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/Shimano/service.jpg" alt="Shimano Service Center" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://www.campagnolo.com" target="_blank" rel="noopener noreferrer" class="h-1/3">
+                            <img src="Images/LOGOS/Campagnolo/Campagnolo_pro_shop.jpg" alt="Campagnolo Pro Shop" class="h-full object-contain border border-black" loading="lazy">
+                        </a>
+                        <a href="https://www.sram.com" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/SRAM/sram.png" alt="SRAM" class="w-full h-full object-contain border border-red-600" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="h-1/4 w-full p-6 flex flex-col justify-center">
+                        <h4 class="text-xl font-bold uppercase italic mb-1">Components</h4>
+                        <p class="text-xs text-white font-bold mb-1 uppercase tracking-wider">Authorized Service Center</p>
+                        <p class="text-[10px] text-gray-400">Campagnolo Pro-Shop & Shimano Service Center</p>
+                    </div>
+                </div>     
+
+                <!-- Wheels Card -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-square glass-card flex flex-col items-center">
+                    <div class="h-3/4 w-full p-6 flex flex-col items-center gap-4 opacity-20 transition duration-500 group-hover:scale-105 group-hover:opacity-100 flex-none">
+                        <a href="https://www.specialized.com/roval" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/roval.png" alt="roval" class="w-full bg-white h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://www.enve.com" target="_blank" rel="noopener noreferrer" class="h-1/3">
+                            <img src="Images/LOGOS/Enve/logo.jpg" alt="Enve" class="h-full object-contain border border-black" loading="lazy">
+                        </a>
+                        <a href="https://www.princetoncarbon.com" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/Princeton/logo.png" alt="Princeton" class="w-full object-contain" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="h-1/4 w-full p-6 flex flex-col justify-center">
+                        <h4 class="text-xl font-bold uppercase italic mb-1">Wheels</h4>
+                        <p class="text-xs text-white font-bold mb-1 uppercase tracking-wider">Princeton, Roval, Enve</p>
+                    </div>
+                </div>
+
+                <!-- Electronics Card -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-square glass-card flex flex-col items-center">
+                    <div class="h-3/4 w-full p-6 flex flex-col gap-4 opacity-20 transition duration-500 group-hover:scale-105 group-hover:opacity-100 flex-none">   
+                        <a href="https://www.wahoofitness.com" target="_blank" rel="noopener noreferrer" class="h-1/2 w-full">
+                            <img src="Images/logos/wahoo/wahoo-logo.png" alt="Wahoo Computers" class="bg-white w-full h-full object-contain p-4" loading="lazy">
+                        </a>
+                        <a href="https://www.garmin.com" target="_blank" rel="noopener noreferrer" class="h-1/2 w-full">
+                            <img src="Images/LOGOS/garmin.png" alt="Garmin Computers" class="w-full h-full object-contain p-4" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="h-1/4 w-full p-6 flex flex-col justify-center">
+                        <h4 class="text-xl font-bold uppercase italic mb-1">Electronics</h4>
+                        <p class="text-xs text-white font-bold mb-1 uppercase tracking-wider">Garmin, Wahoo</p>
+                    </div>
+                </div>
+
+                <!-- Clothing Card -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-square glass-card flex flex-col items-center">
+                    <div class="h-3/4 w-full p-6 flex flex-col gap-4 opacity-20 transition duration-500 group-hover:scale-105 group-hover:opacity-100 flex-none">        
+                        <a href="https://www.q36-5.com" target="_blank" rel="noopener noreferrer" class="h-1/2 w-full">
+                            <img src="Images/LOGOS/q365.svg" alt="Q36.5" class="w-full bg-white h-full object-contain p-4" loading="lazy">
+                        </a>
+                        <a href="https://www.endurasport.com" target="_blank" rel="noopener noreferrer" class="h-1/2 w-full">
+                            <img src="Images/LOGOS/Endura-Logo.jpg" alt="Endura" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="h-1/4 w-full p-6 flex flex-col justify-center">
+                        <h4 class="text-xl font-bold uppercase italic mb-1">Apparel</h4>
+                        <p class="text-xs text-white font-bold mb-1 uppercase tracking-wider">Q36.5, Endura</p>
+                    </div>
+                </div>			
+
+                <!-- Nutrition Card -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-square glass-card flex flex-col items-center">
+                    <div class="h-3/4 w-full p-6 flex flex-col gap-4 opacity-20 transition duration-500 group-hover:scale-105 group-hover:opacity-100 flex-none">        
+                        <a href="https://www.maurten.com" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/maurten.webp" alt="Maurten" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://www.honeystinger.com" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/Honey-Stinger-Logo.png" alt="Honey Stinger" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://www.tailwindnutrition.com" target="_blank" rel="noopener noreferrer" class="h-1/3 w-full">
+                            <img src="Images/LOGOS/tailwind.jpg" alt="Tailwind" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="h-1/4 w-full p-6 flex flex-col justify-center">
+                        <h4 class="text-xl font-bold uppercase italic mb-1">Nutrition</h4>
+                        <p class="text-xs text-white font-bold mb-1 uppercase tracking-wider">Maurten, Tailwind, Honey Stinger</p>
+                    </div>
+                </div>
+
+                <!-- Saddles Card -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-square glass-card flex flex-col items-center">
+                    <div class="h-3/4 w-full p-6 flex flex-row flex-wrap justify-center content-center gap-4 opacity-20 transition duration-500 group-hover:scale-105 group-hover:opacity-100 flex-none"> 
+                        <a href="https://www.specialized.com" target="_blank" rel="noopener noreferrer" class="w-[45%] h-1/3">
+                            <img src="images/logos/specilaized-logo.png" alt="Specialized" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://speedandcomfort.com/" target="_blank" rel="noopener noreferrer" class="w-[45%] h-1/3">
+                            <img src="Images/LOGOS/jcob_logo_white_400x@2x.webp" alt="JCOB" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://www.wtb.com" target="_blank" rel="noopener noreferrer" class="w-[45%] h-1/3">
+                            <img src="Images/LOGOS/wtb.svg" alt="WTB" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                        <a href="https://www.selleitalia.com" target="_blank" rel="noopener noreferrer" class="w-[45%] h-1/3">
+                            <img src="Images/LOGOS/selleitalia/logo.jpg" alt="Selle Italia" class="w-full h-full object-contain" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="h-1/4 w-full p-6 flex flex-col justify-center">
+                        <h4 class="text-xl font-bold uppercase italic mb-1">Saddles</h4>
+                        <p class="text-xs text-white font-bold mb-1 uppercase tracking-wider">Specialized, JCOB, Selle Italia, WTB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Bike Fitting Section -->
+    <section id="fittings" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative rounded-2xl overflow-hidden aspect-square shadow-2xl">
+                    <img src="images/retul1.jpg?auto=format&fit=crop&q=80&w=1200" alt="Retül Bike Fitting" class="w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-electric-blue/20 mix-blend-multiply"></div>
+                    <div class="absolute top-4 left-4 md:top-10 md:left-10 z-10">
+                        <div class="bg-electric-blue/50 backdrop-blur-md p-4 md:p-6 text-center transform -rotate-[10deg] rounded-xl border border-black/20 shadow-2xl">
+                            <span class="text-3xl md:text-4xl font-black italic uppercase block text-electric-blue drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">20,000+</span>
+                            <p class="text-[10px] uppercase tracking-widest font-bold text-white">Fittings Performed</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-center bg-black/60 text-white font-semibold text-sm">
+                        Six-time National Champion Nick Mackie getting fit on his Specialized Diverge.
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-electric-blue font-bold uppercase tracking-widest text-sm mb-2">Master Fit Center</h2>
+                    <h3 class="text-4xl md:text-5xl font-800 uppercase mb-4">Precision Human Performance</h3>
+                    
+                    <p class="text-gray-400 mb-6 leading-relaxed italic border-l-4 border-electric-blue pl-6">
+                        "The interface between human and machine is where speed is born. We don't just fit bikes; we optimize athletes."<br><span class="text-xs uppercase font-bold tracking-widest text-white mt-2 block">More fittings than anyone in the Southeast United States</span>
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <!-- Retül -->
+                        <div class="flex items-start space-x-6">
+                            <div class="h-12 min-w-36 w-auto flex-none flex items-center justify-center overflow-hidden">
+                                <a href="https://www.retul.com" target="_blank" rel="noopener noreferrer" class="h-full flex items-center justify-center">
+                                    <img src="Images/LOGOS/Retul/RetulLogo.webp" alt="Retül" class="h-full w-auto object-contain" loading="lazy">
+                                </a>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold uppercase italic mb-2">Retül 3D Motion Capture</h4>
+                                <p class="text-gray-400 text-sm">Millimeter-accurate dynamic analysis using 8 LED body markers to track your pedal stroke in real-time 3D space.</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-800 pt-6">
+                            <!-- Serotta -->
+                            <div class="flex items-start space-x-6">
+                                <div class="h-4 min-w-36 w-auto flex-none flex items-center justify-center overflow-hidden">
+                                    <a href="https://serotta.com/" target="_blank" rel="noopener noreferrer" class="h-full flex items-center justify-center">
+                                        <img src="Images/LOGOS/setorra.webp" alt="Serotta" class="h-full w-auto object-contain" loading="lazy">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold uppercase italic mb-2">Serotta Methodology</h4>
+                                    <p class="text-gray-400 text-sm">The gold standard in frame geometry. Comprehensive flexibility assessment and "Size Cycle" optimization for the perfect custom build.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-800 pt-6">
+                            <!-- Slowtwitch -->
+                            <div class="flex items-start space-x-6">
+                                <div class="h-6 min-w-36 w-auto flex-none flex items-center justify-center overflow-hidden">
+                                    <a href="https://www.slowtwitch.com/Fittings/" target="_blank" rel="noopener noreferrer" class="h-full flex items-center justify-center">
+                                        <img src="Images/LOGOS/slowtwitch-logo.png" alt="Slowtwitch F.I.S.T." class="h-full w-auto object-contain" loading="lazy">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold uppercase italic mb-2">F.I.S.T. Certification</h4>
+                                    <p class="text-gray-400 text-sm">Master certified in the Fit Institute Slowtwitch protocol, the industry standard for triathlon positioning.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-800 pt-6">
+                            <!-- Waterford -->
+                            <div class="flex items-start space-x-6">
+                                <div class="h-12 min-w-36 w-auto flex-none flex items-center justify-center overflow-hidden">
+                                    <a href="https://waterfordbikes.com/" target="_blank" rel="noopener noreferrer" class="h-full flex items-center justify-center">
+                                        <img src="Images/LOGOS/Waterford+Logo.webp" alt="Waterford" class="h-full w-auto object-contain" loading="lazy">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold uppercase italic mb-2">Waterford Precision Sizing</h4>
+                                    <p class="text-gray-400 text-sm">Expert certification in Waterford’s precision sizing methodology for perfect frame geometry.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-800 pt-6">
+                            <!-- JCOB -->
+                            <div class="flex items-start space-x-6">
+                                <div class="h-12 min-w-36 w-auto flex-none flex items-center justify-center overflow-hidden">
+                                    <a href="https://speedandcomfort.com/" target="_blank" rel="noopener noreferrer" class="h-full flex items-center justify-center">
+                                        <img src="Images/LOGOS/jcob.png" alt="JCOB" class="h-full w-auto object-contain" loading="lazy">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold uppercase italic mb-2">Cobb Cycling Ergonomics</h4>
+                                    <p class="text-gray-400 text-sm">Certified in Cobb cycling ergonomics, specializing in anatomical saddle fitting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <a href="index.html#contact" class="inline-block bg-electric-blue hover-electric-blue text-white font-black py-4 px-10 rounded-full transition transform hover:scale-105 uppercase tracking-widest text-sm shadow-xl">
+                            Schedule Your Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-xl font-800 tracking-tighter italic uppercase mb-6 block">The Racer's <span class="text-electric-blue">Edge</span></span>
+            <p class="text-gray-600 text-sm">© 2026 The Racer's Edge. Authorized Dealer: Specialized, Colnago, Cannondale, Santa Cruz, Pinarello.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
