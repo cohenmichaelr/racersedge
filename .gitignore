@@ -1,0 +1,8 @@
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Dreamweaver sync metadata
+_notes/
+dwsync.xml
